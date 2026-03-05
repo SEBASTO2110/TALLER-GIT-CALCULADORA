@@ -17,3 +17,17 @@ if es_capicua(numero):
         print("Es capicua")
 else:
         print("No es capicua")
+
+
+def es_perfecto(numero):
+    suma = 0
+    for i in range(1, numero):
+        if numero % i == 0:
+            suma += i
+    return suma == numero
+numero = int(input("Ingrese un numero: "))
+
+if es_perfecto(numero):
+    print("Es numero perfecto")
+else:
+    print("No es numero perfecto")
