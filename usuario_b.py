@@ -5,3 +5,10 @@ def es_primo(n):
             if n % i == 0:
                 return False
     return True
+
+def primos_en_rango(inicio, fin):
+    primos = []
+    for num in range(inicio, fin + 1):
+        if es_primo(num):
+            primos.append(num) 
+    return primos
