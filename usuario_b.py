@@ -12,3 +12,7 @@ def primos_en_rango(inicio, fin):
         if es_primo(num):
             primos.append(num) 
     return primos
+
+def factorial(n):
+    if n < 0:
+        return "No existe factorial para números negativos"
