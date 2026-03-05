@@ -17,3 +17,7 @@ if es_capicua(numero):
         print("Es capicua")
 else:
         print("No es capicua")
+
+
+def es_perfecto(numero):
+    pass
