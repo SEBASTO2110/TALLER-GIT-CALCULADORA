@@ -11,3 +11,4 @@ def primos_en_rango(inicio, fin):
     for num in range(inicio, fin + 1):
         if es_primo(num):
             primos.append(num) 
+    return primos
