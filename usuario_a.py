@@ -20,7 +20,7 @@ def es_perfecto(numero):
     for i in range(1, numero):
         if numero % i == 0:
             suma += i
-        return suma == numero
+            
     if suma == numero:
         print("Es numero perfecto")
     else:
