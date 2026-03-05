@@ -11,3 +11,9 @@ fibonacci(n)
 def es_capicua(numero):
     texto = str(numero)
     return texto == texto[::-1]
+numero = int(input("Ingrese un numero: "))
+
+if es_capicua(numero):
+        print("Es capicua")
+else:
+        print("No es capicua")
