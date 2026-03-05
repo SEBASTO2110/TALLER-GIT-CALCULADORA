@@ -1,2 +1,3 @@
 def es_primo(n):
-    pass 
+    if n < 2:
+        return False
