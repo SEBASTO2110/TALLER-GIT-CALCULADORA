@@ -8,8 +8,10 @@ def fibonacci(n):
 
 
 def es_capicua(numero):
-    texto = str(numero)
-    return texto == texto[::-1]
+    if str(numero) == str(numero)[::-1]:
+        print("Es capicua")
+    else:
+        print("No es capicua")
 
 
 
