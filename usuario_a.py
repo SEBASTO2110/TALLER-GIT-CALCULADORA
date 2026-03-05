@@ -4,19 +4,13 @@ def fibonacci(n):
         print(a)
         a, b = b, a + b
 
-n = int(input("Ingrese la cantidad de términos: "))
-fibonacci(n)
+
 
 
 def es_capicua(numero):
     texto = str(numero)
     return texto == texto[::-1]
-numero = int(input("Ingrese un numero: "))
 
-if es_capicua(numero):
-        print("Es capicua")
-else:
-        print("No es capicua")
 
 
 def es_perfecto(numero):
@@ -25,9 +19,3 @@ def es_perfecto(numero):
         if numero % i == 0:
             suma += i
     return suma == numero
-numero = int(input("Ingrese un numero: "))
-
-if es_perfecto(numero):
-    print("Es numero perfecto")
-else:
-    print("No es numero perfecto")
