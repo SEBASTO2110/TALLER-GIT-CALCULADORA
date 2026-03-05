@@ -1,4 +1,4 @@
-from usuario_a import fibonacci, capicua, numero_perfecto
+from usuario_a import fibonacci, es_capicua, es_perfecto
 from usuario_b import primos_en_rango, es_primo, factorial, mcd
 
 
@@ -26,11 +26,11 @@ def main():
 
         elif opcion == "2":
             numero = input("Ingrese un número: ")
-            capicua(numero)
+            es_capicua(numero)
 
         elif opcion == "3":
             numero = int(input("Ingrese un número: "))
-            numero_perfecto(numero)
+            es_perfecto(numero)
 
         elif opcion == "4":
             inicio = int(input("Ingrese el valor inicial: "))
@@ -60,40 +60,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-def fibonacci(n):
-    a, b = 0, 1
-    for i in range(n):
-        print(a)
-        a, b = b, a + b
-
-n = int(input("Ingrese la cantidad de términos: "))
-fibonacci(n)
-
-
-def es_capicua(numero):
-    texto = str(numero)
-    return texto == texto[::-1]
-numero = int(input("Ingrese un numero: "))
-
-if es_capicua(numero):
-        print("Es capicua")
-else:
-        print("No es capicua")
-
-
-def es_perfecto(numero):
-    suma = 0
-    for i in range(1, numero):
-        if numero % i == 0:
-            suma += i
-    return suma == numero
-numero = int(input("Ingrese un numero: "))
-
-if es_perfecto(numero):
-    print("Es numero perfecto")
-else:
-    print("No es numero perfecto")
