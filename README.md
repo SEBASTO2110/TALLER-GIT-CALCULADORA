@@ -2,3 +2,4 @@
 
 ## Colaboradores
 - Sebastian Diaz
+- Sebastian jaimes
