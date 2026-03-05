@@ -9,4 +9,5 @@ fibonacci(n)
 
 
 def es_capicua(numero):
-    pass
+    texto = str(numero)
+    return texto == texto[::-1]
