@@ -3,3 +3,6 @@ def fibonacci(n):
     for i in range(n):
         print(a)
         a, b = b, a + b
+        
+n = int(input("Ingrese la cantidad de términos: "))
+fibonacci(n)
