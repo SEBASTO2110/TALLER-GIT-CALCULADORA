@@ -20,3 +20,6 @@ def factorial(n):
     for i in range(1, n + 1):
         resultado *= i
     return resultado
+
+def mcd(a, b):
+    while b != 0:
